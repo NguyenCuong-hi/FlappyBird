@@ -18,3 +18,16 @@ A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird 
 A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Debug\Flappy Bird Windows Form.exe
 A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Debug\Flappy Bird Windows Form.pdb
 A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Debug\Flappy Bird Windows Form.csproj.AssemblyReference.cache
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\bin\Debug\Flappy Bird Windows Form.exe.config
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\bin\Debug\Flappy Bird Windows Form.exe
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\bin\Debug\Flappy Bird Windows Form.pdb
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\obj\Debug\Flappy Bird Windows Form.csproj.AssemblyReference.cache
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\obj\Debug\Flappy_Bird_Windows_Form.Form1.resources
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\obj\Debug\Flappy_Bird_Windows_Form.Properties.Resources.resources
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\obj\Debug\Flappy Bird Windows Form.csproj.GenerateResource.cache
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\obj\Debug\Flappy Bird Windows Form.csproj.CoreCompileInputs.cache
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\obj\Debug\Flappy Bird Windows Form.exe
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\obj\Debug\Flappy Bird Windows Form.pdb
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\bin\Debug\Music\end_game_sound.wav
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\bin\Debug\Music\music_background.wav
+A:\Workspaces\Learn\.Net\FlappyBird\FlappyBirdCore\Flappy Bird Windows Form\bin\Debug\Music\music_during_play.wav
