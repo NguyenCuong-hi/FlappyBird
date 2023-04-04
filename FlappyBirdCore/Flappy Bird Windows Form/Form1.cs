@@ -17,15 +17,13 @@ namespace Flappy_Bird_Windows_Form
         int cloudySpeed = 5;
         int gravity = 5; 
         int score = 0;
+        bool gameOver = false;
 
         public Form1()
         {
             InitializeComponent();
-            flappyBird.Visible = false;
-            pipeBottom.Visible = false;
-            pipeTop.Visible = false;
-            ground.Visible = false;
-            lblS.Visible = true;
+            gameTimer.Start();
+
         }
 
         private void gamekeyisdown(object sender, KeyEventArgs e)
@@ -43,6 +41,10 @@ namespace Flappy_Bird_Windows_Form
             {
                 gravity = 10;
             }
+            if(e.KeyCode == Keys.Enter && gameOver)
+            {
+                RestartGame();
+            }
 
         }
 
@@ -50,16 +52,28 @@ namespace Flappy_Bird_Windows_Form
         {
             gameTimer.Stop();
             scoreText.Text += " Game over!!!";
-            lblS.Visible = true;
+            scoreText.Text += " PRESS 'R' to play again !";
+            gameOver = true;
+           
+            
+        }
+
+        private void RestartGame()
+        {
+            gameOver = false;
+            flappyBird.Location = new Point(69,200);
+            pipeTop.Left = 800;
+            pipeBottom.Left = 1200;
+
+            score = 0;
+            pipeSpeed = 8;
+            scoreText.Text = "Score : 0";
+            gameTimer.Start();
+
         }
 
         private void gameTimerEvent(object sender, EventArgs e)
         {
-            flappyBird.Visible = true;
-            pipeBottom.Visible = true;
-            pipeTop.Visible = true;
-            ground.Visible = true;
-            lblStart.Visible = false;
                 flappyBird.Top += gravity;
                 pipeBottom.Left -= pipeSpeed;
                 pipeTop.Left -= pipeSpeed;
@@ -115,10 +129,6 @@ namespace Flappy_Bird_Windows_Form
             }
         }
 
-        private void lblS_Click(object sender, EventArgs e)
-        {
-            gameTimer.Start();
-            lblS.Visible = false;
-        }
+
     }
 }

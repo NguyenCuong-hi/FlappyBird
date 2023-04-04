@@ -32,7 +32,6 @@
             this.scoreText = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.lblStart = new System.Windows.Forms.Label();
-            this.lblS = new System.Windows.Forms.Label();
             this.ground = new System.Windows.Forms.PictureBox();
             this.pipeBottom = new System.Windows.Forms.PictureBox();
             this.pipeTop = new System.Windows.Forms.PictureBox();
@@ -69,17 +68,6 @@
             this.lblStart.Name = "lblStart";
             this.lblStart.Size = new System.Drawing.Size(0, 62);
             this.lblStart.TabIndex = 5;
-            // 
-            // lblS
-            // 
-            this.lblS.AutoSize = true;
-            this.lblS.Font = new System.Drawing.Font("MV Boli", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS.Location = new System.Drawing.Point(208, 276);
-            this.lblS.Name = "lblS";
-            this.lblS.Size = new System.Drawing.Size(271, 62);
-            this.lblS.TabIndex = 5;
-            this.lblS.Text = "New Game";
-            this.lblS.Click += new System.EventHandler(this.lblS_Click);
             // 
             // ground
             // 
@@ -140,7 +128,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(622, 707);
-            this.Controls.Add(this.lblS);
             this.Controls.Add(this.lblStart);
             this.Controls.Add(this.scoreText);
             this.Controls.Add(this.ground);
@@ -172,7 +159,6 @@
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label lblStart;
         private System.Windows.Forms.PictureBox cloudy;
-        private System.Windows.Forms.Label lblS;
     }
 }
 
