@@ -29,15 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.scoreText = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.lblStart = new System.Windows.Forms.Label();
-            this.lblS = new System.Windows.Forms.Label();
+            this.lblNewGame = new System.Windows.Forms.Label();
+            this.lblHelp = new System.Windows.Forms.Label();
+            this.lblAbout = new System.Windows.Forms.Label();
+            this.lblExit = new System.Windows.Forms.Label();
+            this.picPause = new System.Windows.Forms.PictureBox();
             this.ground = new System.Windows.Forms.PictureBox();
             this.pipeBottom = new System.Windows.Forms.PictureBox();
             this.pipeTop = new System.Windows.Forms.PictureBox();
             this.flappyBird = new System.Windows.Forms.PictureBox();
             this.cloudy = new System.Windows.Forms.PictureBox();
+            this.overGameText = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picPause)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
@@ -47,14 +54,9 @@
             // 
             // scoreText
             // 
-            this.scoreText.AutoSize = true;
+            resources.ApplyResources(this.scoreText, "scoreText");
             this.scoreText.BackColor = System.Drawing.Color.Moccasin;
-            this.scoreText.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreText.Location = new System.Drawing.Point(181, 661);
             this.scoreText.Name = "scoreText";
-            this.scoreText.Size = new System.Drawing.Size(122, 37);
-            this.scoreText.TabIndex = 4;
-            this.scoreText.Text = "Score: 0";
             // 
             // gameTimer
             // 
@@ -63,84 +65,94 @@
             // 
             // lblStart
             // 
-            this.lblStart.AutoSize = true;
-            this.lblStart.Font = new System.Drawing.Font("MV Boli", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStart.Location = new System.Drawing.Point(53, 296);
+            resources.ApplyResources(this.lblStart, "lblStart");
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(0, 62);
-            this.lblStart.TabIndex = 5;
             // 
-            // lblS
+            // lblNewGame
             // 
-            this.lblS.AutoSize = true;
-            this.lblS.Font = new System.Drawing.Font("MV Boli", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS.Location = new System.Drawing.Point(208, 276);
-            this.lblS.Name = "lblS";
-            this.lblS.Size = new System.Drawing.Size(271, 62);
-            this.lblS.TabIndex = 5;
-            this.lblS.Text = "New Game";
-            this.lblS.Click += new System.EventHandler(this.lblS_Click);
+            resources.ApplyResources(this.lblNewGame, "lblNewGame");
+            this.lblNewGame.Name = "lblNewGame";
+            this.lblNewGame.Click += new System.EventHandler(this.lblNewGame_Click);
+            // 
+            // lblHelp
+            // 
+            resources.ApplyResources(this.lblHelp, "lblHelp");
+            this.lblHelp.Name = "lblHelp";
+            this.lblHelp.Click += new System.EventHandler(this.lblHelp_Click);
+            // 
+            // lblAbout
+            // 
+            resources.ApplyResources(this.lblAbout, "lblAbout");
+            this.lblAbout.Name = "lblAbout";
+            this.lblAbout.Click += new System.EventHandler(this.lblAbout_Click);
+            // 
+            // lblExit
+            // 
+            resources.ApplyResources(this.lblExit, "lblExit");
+            this.lblExit.Name = "lblExit";
+            this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
+            // 
+            // picPause
+            // 
+            this.picPause.BackColor = System.Drawing.Color.Aqua;
+            this.picPause.Image = global::Flappy_Bird_Windows_Form.Properties.Resources.pauseButton_removebg_preview;
+            resources.ApplyResources(this.picPause, "picPause");
+            this.picPause.Name = "picPause";
+            this.picPause.TabStop = false;
+            this.picPause.Click += new System.EventHandler(this.picPause_Click);
             // 
             // ground
             // 
             this.ground.Image = global::Flappy_Bird_Windows_Form.Properties.Resources.ground;
-            this.ground.Location = new System.Drawing.Point(-16, 633);
+            resources.ApplyResources(this.ground, "ground");
             this.ground.Name = "ground";
-            this.ground.Size = new System.Drawing.Size(655, 126);
-            this.ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ground.TabIndex = 3;
             this.ground.TabStop = false;
             // 
             // pipeBottom
             // 
             this.pipeBottom.Image = global::Flappy_Bird_Windows_Form.Properties.Resources.pipe;
-            this.pipeBottom.Location = new System.Drawing.Point(419, 382);
+            resources.ApplyResources(this.pipeBottom, "pipeBottom");
             this.pipeBottom.Name = "pipeBottom";
-            this.pipeBottom.Size = new System.Drawing.Size(109, 286);
-            this.pipeBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pipeBottom.TabIndex = 1;
             this.pipeBottom.TabStop = false;
             // 
             // pipeTop
             // 
             this.pipeTop.Image = global::Flappy_Bird_Windows_Form.Properties.Resources.pipedown;
-            this.pipeTop.Location = new System.Drawing.Point(495, -59);
+            resources.ApplyResources(this.pipeTop, "pipeTop");
             this.pipeTop.Name = "pipeTop";
-            this.pipeTop.Size = new System.Drawing.Size(100, 266);
-            this.pipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pipeTop.TabIndex = 0;
             this.pipeTop.TabStop = false;
             // 
             // flappyBird
             // 
             this.flappyBird.BackColor = System.Drawing.Color.Aqua;
-            this.flappyBird.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.flappyBird, "flappyBird");
             this.flappyBird.Image = global::Flappy_Bird_Windows_Form.Properties.Resources.flappyBird;
-            this.flappyBird.Location = new System.Drawing.Point(74, 204);
             this.flappyBird.Name = "flappyBird";
-            this.flappyBird.Size = new System.Drawing.Size(91, 82);
-            this.flappyBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.flappyBird.TabIndex = 2;
             this.flappyBird.TabStop = false;
             // 
             // cloudy
             // 
-            this.cloudy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            resources.ApplyResources(this.cloudy, "cloudy");
             this.cloudy.Image = global::Flappy_Bird_Windows_Form.Properties.Resources.clouds;
-            this.cloudy.Location = new System.Drawing.Point(41, 23);
             this.cloudy.Name = "cloudy";
-            this.cloudy.Size = new System.Drawing.Size(383, 156);
-            this.cloudy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cloudy.TabIndex = 6;
             this.cloudy.TabStop = false;
+            // 
+            // overGameText
+            // 
+            resources.ApplyResources(this.overGameText, "overGameText");
+            this.overGameText.Name = "overGameText";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(622, 707);
-            this.Controls.Add(this.lblS);
+            this.Controls.Add(this.overGameText);
+            this.Controls.Add(this.picPause);
+            this.Controls.Add(this.lblExit);
+            this.Controls.Add(this.lblAbout);
+            this.Controls.Add(this.lblHelp);
+            this.Controls.Add(this.lblNewGame);
             this.Controls.Add(this.lblStart);
             this.Controls.Add(this.scoreText);
             this.Controls.Add(this.ground);
@@ -148,10 +160,13 @@
             this.Controls.Add(this.pipeTop);
             this.Controls.Add(this.flappyBird);
             this.Controls.Add(this.cloudy);
+            this.KeyPreview = true;
             this.Name = "Form1";
-            this.Text = "Flappy Bird Game";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gamekeyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gamekeyisup);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form1_PreviewKeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.picPause)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).EndInit();
@@ -172,7 +187,12 @@
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label lblStart;
         private System.Windows.Forms.PictureBox cloudy;
-        private System.Windows.Forms.Label lblS;
+        private System.Windows.Forms.Label lblNewGame;
+        private System.Windows.Forms.Label lblHelp;
+        private System.Windows.Forms.Label lblAbout;
+        private System.Windows.Forms.Label lblExit;
+        private System.Windows.Forms.PictureBox picPause;
+        private System.Windows.Forms.Label overGameText;
     }
 }
 
