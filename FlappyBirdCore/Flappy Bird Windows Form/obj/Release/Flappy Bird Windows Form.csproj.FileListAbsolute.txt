@@ -1,0 +1,10 @@
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\bin\Release\Flappy Bird Windows Form.exe.config
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\bin\Release\Flappy Bird Windows Form.exe
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\bin\Release\Flappy Bird Windows Form.pdb
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Release\Flappy Bird Windows Form.csproj.AssemblyReference.cache
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Release\Flappy_Bird_Windows_Form.Form1.resources
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Release\Flappy_Bird_Windows_Form.Properties.Resources.resources
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Release\Flappy Bird Windows Form.csproj.GenerateResource.cache
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Release\Flappy Bird Windows Form.csproj.CoreCompileInputs.cache
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Release\Flappy Bird Windows Form.exe
+A:\Workspaces\Learn\.Net\Flatt\C-Flappy-Bird-Game-Windows-Form-main\Flappy Bird Windows Form\Flappy Bird Windows Form\obj\Release\Flappy Bird Windows Form.pdb
